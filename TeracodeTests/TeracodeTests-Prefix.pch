@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TeracodeTests' target in the 'TeracodeTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
