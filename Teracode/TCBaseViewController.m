@@ -16,6 +16,10 @@
 
 - (void)initialize {
     self.viewModel = [self createViewModel];
+    if ([self respondsToSelector:@selector(customizeViewController)]) {
+        [self customizeViewController];
+    }
+    loadingRefs = [[NSMutableArray alloc] init];
 }
 
 - (id)init {
@@ -48,6 +52,7 @@
         viewModel.delegate = nil;
     }
     [viewModel release];
+    [loadingRefs release];
     [super dealloc];
 }
 
@@ -65,17 +70,17 @@
 
 #pragma mark - ViewModel delegate methods
 
-- (void)viewModel:(id<TCViewModel>)viewModel willStartLoading:(BOOL)modal {
-    [self showLoadingView:modal];
+- (void)viewModel:(id<TCViewModel>)viewModel willStartLoading:(BOOL)modal ref:(id)ref {
+    [self showLoadingView:modal ref:ref];
 }
 
-- (void)viewModelDidFinishLoading:(id<TCViewModel>)viewModel {
-    [self hideLoadingView];
+- (void)viewModel:(id<TCViewModel>)viewModel didFinishLoading:(id)ref {
+    [self hideLoadingView:ref];
     [self updateViewFromViewModel];
 }
 
-- (void)viewModel:(id<TCViewModel>)viewModel didFailLoadingWithError:(NSError *)error {
-    [self hideLoadingView];
+- (void)viewModel:(id<TCViewModel>)viewModel didFailLoadingWithError:(NSError *)error ref:(id)ref {
+    [self hideLoadingView:ref];
 }
 
 #pragma mark - Overrideables
@@ -92,7 +97,37 @@
     return NSClassFromString(className);
 }
 
-- (void)showLoadingView:(BOOL)modal {
+- (void)showLoadingView:(BOOL)modal ref:(id)ref {
+    if (!modal) {
+        // if first loading, show loading indicator
+        if ([loadingRefs count] == 0) {
+            [self showLoadingView];
+        }
+        [loadingRefs addObject:ref];
+    }
+    else {
+        // @TODO: show a modal loading view
+    }
+}
+
+- (void)hideLoadingView:(id)ref {
+    if (ref) {
+        // there is a ref to a previously started loading
+        if ([loadingRefs containsObject:ref]) {
+            // loading was non-modal
+            [loadingRefs removeObject:ref];
+            if ([loadingRefs count]) {
+                // loadings count reach zero, so hide the loading view
+                [self hideLoadingView];
+            }
+        }
+        else {
+            // @TODO: hide modal loading view
+        }
+    }
+}
+
+- (void)showLoadingView {
     // @TODO: add a loading indicator
 }
 

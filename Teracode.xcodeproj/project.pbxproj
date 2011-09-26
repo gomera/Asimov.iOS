@@ -23,6 +23,12 @@
 		9120E19B1427A9050071ACD6 /* TCBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E1991427A9050071ACD6 /* TCBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9120E19C1427A9050071ACD6 /* TCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E19A1427A9050071ACD6 /* TCBaseViewController.m */; };
 		9120E1A01427AC690071ACD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E19F1427AC690071ACD6 /* UIKit.framework */; };
+		91FF41771430EB0A00293476 /* TCBaseListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FF41751430EB0A00293476 /* TCBaseListViewModel.h */; };
+		91FF41781430EB0A00293476 /* TCBaseListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF41761430EB0A00293476 /* TCBaseListViewModel.m */; };
+		91FF418A1430FA3700293476 /* TCTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FF41881430FA3700293476 /* TCTableViewController.h */; };
+		91FF418B1430FA3700293476 /* TCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF41891430FA3700293476 /* TCTableViewController.m */; };
+		91FF418E1430FC1100293476 /* TCBaseListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FF418C1430FC1100293476 /* TCBaseListViewController.h */; };
+		91FF418F1430FC1100293476 /* TCBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF418D1430FC1100293476 /* TCBaseListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		9120E1991427A9050071ACD6 /* TCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBaseViewController.h; sourceTree = "<group>"; };
 		9120E19A1427A9050071ACD6 /* TCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBaseViewController.m; sourceTree = "<group>"; };
 		9120E19F1427AC690071ACD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91FF41751430EB0A00293476 /* TCBaseListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBaseListViewModel.h; sourceTree = "<group>"; };
+		91FF41761430EB0A00293476 /* TCBaseListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBaseListViewModel.m; sourceTree = "<group>"; };
+		91FF41881430FA3700293476 /* TCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTableViewController.h; sourceTree = "<group>"; };
+		91FF41891430FA3700293476 /* TCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTableViewController.m; sourceTree = "<group>"; };
+		91FF418C1430FC1100293476 /* TCBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBaseListViewController.h; sourceTree = "<group>"; };
+		91FF418D1430FC1100293476 /* TCBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBaseListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,8 @@
 				9120E19414279BDD0071ACD6 /* TCViewModel.h */,
 				9120E19214279BDD0071ACD6 /* TCBaseViewModel.h */,
 				9120E19314279BDD0071ACD6 /* TCBaseViewModel.m */,
+				91FF41751430EB0A00293476 /* TCBaseListViewModel.h */,
+				91FF41761430EB0A00293476 /* TCBaseListViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +179,10 @@
 			children = (
 				9120E1991427A9050071ACD6 /* TCBaseViewController.h */,
 				9120E19A1427A9050071ACD6 /* TCBaseViewController.m */,
+				91FF41881430FA3700293476 /* TCTableViewController.h */,
+				91FF41891430FA3700293476 /* TCTableViewController.m */,
+				91FF418C1430FC1100293476 /* TCBaseListViewController.h */,
+				91FF418D1430FC1100293476 /* TCBaseListViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -180,6 +198,9 @@
 				9120E19514279BDD0071ACD6 /* TCBaseViewModel.h in Headers */,
 				9120E19714279BDD0071ACD6 /* TCViewModel.h in Headers */,
 				9120E19B1427A9050071ACD6 /* TCBaseViewController.h in Headers */,
+				91FF41771430EB0A00293476 /* TCBaseListViewModel.h in Headers */,
+				91FF418A1430FA3700293476 /* TCTableViewController.h in Headers */,
+				91FF418E1430FC1100293476 /* TCBaseListViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +306,9 @@
 				9120E174142798B60071ACD6 /* TCAppDelegate+SwitchViews.m in Sources */,
 				9120E19614279BDD0071ACD6 /* TCBaseViewModel.m in Sources */,
 				9120E19C1427A9050071ACD6 /* TCBaseViewController.m in Sources */,
+				91FF41781430EB0A00293476 /* TCBaseListViewModel.m in Sources */,
+				91FF418B1430FA3700293476 /* TCTableViewController.m in Sources */,
+				91FF418F1430FC1100293476 /* TCBaseListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -338,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -351,14 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEAD_CODE_STRIPPING = NO;
+				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/Teracode.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,14 +390,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Teracode.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

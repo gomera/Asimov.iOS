@@ -30,26 +30,26 @@
 #pragma mark - Utils
         
 - (BOOL)dataIsLoaded {
-    return status == TCViewModelStatusLoaded;
+    return (status & TCViewModelStatusLoaded) == TCViewModelStatusLoaded;
 }
 
 - (BOOL)dataIsLoading {
-    return status == TCViewModelStatusLoading;
+    return (status & TCViewModelStatusLoading) == TCViewModelStatusLoading;
 }
 
-- (void)willStartLoading:(BOOL)modal {
+- (void)willStartLoading:(BOOL)modal ref:(id)ref {
     self.status = TCViewModelStatusLoading;
-    [self.delegate viewModel:self willStartLoading:modal];
+    [self.delegate viewModel:self willStartLoading:modal ref:ref];
 }
 
-- (void)didFinishLoading {
+- (void)didFinishLoading:(id)ref {
     self.status = TCViewModelStatusLoaded;
-    [self.delegate viewModelDidFinishLoading:self];
+    [self.delegate viewModel:self didFinishLoading:ref];
 }
 
-- (void)didFailLoadingWithError:(NSError *)error {
+- (void)didFailLoadingWithError:(NSError *)error ref:(id)ref {
     self.status = TCViewModelStatusUnloaded;
-    [self.delegate viewModel:self didFailLoadingWithError:error];
+    [self.delegate viewModel:self didFailLoadingWithError:error ref:ref];
 }
 
 @end
