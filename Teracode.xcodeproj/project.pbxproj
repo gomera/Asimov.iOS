@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
+		388B98FF14588125007990DE /* TCGridCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B98F714588125007990DE /* TCGridCellView.m */; };
+		388B990014588125007990DE /* TCGridCellView+GridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F814588125007990DE /* TCGridCellView+GridView.h */; };
+		388B990114588125007990DE /* TCGridCellViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F914588125007990DE /* TCGridCellViewDelegate.h */; };
+		388B990214588125007990DE /* TCGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98FA14588125007990DE /* TCGridView.h */; };
+		388B990314588125007990DE /* TCGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B98FB14588125007990DE /* TCGridView.m */; };
+		388B990414588125007990DE /* TCGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98FC14588125007990DE /* TCGridViewDataSource.h */; };
+		388B990514588125007990DE /* TCGridViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98FD14588125007990DE /* TCGridViewDelegate.h */; };
 		9120E141142798750071ACD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E140142798750071ACD6 /* Foundation.framework */; };
 		9120E14D142798750071ACD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E140142798750071ACD6 /* Foundation.framework */; };
 		9120E14F142798750071ACD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E14E142798750071ACD6 /* CoreGraphics.framework */; };
@@ -42,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
+		388B98F714588125007990DE /* TCGridCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCGridCellView.m; path = Grid/TCGridCellView.m; sourceTree = "<group>"; };
+		388B98F814588125007990DE /* TCGridCellView+GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TCGridCellView+GridView.h"; path = "Grid/TCGridCellView+GridView.h"; sourceTree = "<group>"; };
+		388B98F914588125007990DE /* TCGridCellViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellViewDelegate.h; path = Grid/TCGridCellViewDelegate.h; sourceTree = "<group>"; };
+		388B98FA14588125007990DE /* TCGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridView.h; path = Grid/TCGridView.h; sourceTree = "<group>"; };
+		388B98FB14588125007990DE /* TCGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCGridView.m; path = Grid/TCGridView.m; sourceTree = "<group>"; };
+		388B98FC14588125007990DE /* TCGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridViewDataSource.h; path = Grid/TCGridViewDataSource.h; sourceTree = "<group>"; };
+		388B98FD14588125007990DE /* TCGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridViewDelegate.h; path = Grid/TCGridViewDelegate.h; sourceTree = "<group>"; };
 		9120E13D142798750071ACD6 /* libTeracode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTeracode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9120E140142798750071ACD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9120E144142798750071ACD6 /* Teracode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Teracode-Prefix.pch"; sourceTree = "<group>"; };
@@ -92,6 +108,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388B98F3145880C1007990DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				388B98F5145880C8007990DE /* Grid */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		388B98F5145880C8007990DE /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				388B98F614588125007990DE /* TCGridCellView.h */,
+				388B98F714588125007990DE /* TCGridCellView.m */,
+				388B98F814588125007990DE /* TCGridCellView+GridView.h */,
+				388B98F914588125007990DE /* TCGridCellViewDelegate.h */,
+				388B98FA14588125007990DE /* TCGridView.h */,
+				388B98FB14588125007990DE /* TCGridView.m */,
+				388B98FC14588125007990DE /* TCGridViewDataSource.h */,
+				388B98FD14588125007990DE /* TCGridViewDelegate.h */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
 		9120E132142798740071ACD6 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +163,7 @@
 		9120E142142798750071ACD6 /* Teracode */ = {
 			isa = PBXGroup;
 			children = (
+				388B98F3145880C1007990DE /* Components */,
 				9120E1981427A8EF0071ACD6 /* ViewController */,
 				9120E18A14279BAD0071ACD6 /* ViewModel */,
 				9120E16F142798B60071ACD6 /* TCAppDelegate.h */,
@@ -201,6 +241,12 @@
 				91FF41771430EB0A00293476 /* TCBaseListViewModel.h in Headers */,
 				91FF418A1430FA3700293476 /* TCTableViewController.h in Headers */,
 				91FF418E1430FC1100293476 /* TCBaseListViewController.h in Headers */,
+				388B98FE14588125007990DE /* TCGridCellView.h in Headers */,
+				388B990014588125007990DE /* TCGridCellView+GridView.h in Headers */,
+				388B990114588125007990DE /* TCGridCellViewDelegate.h in Headers */,
+				388B990214588125007990DE /* TCGridView.h in Headers */,
+				388B990414588125007990DE /* TCGridViewDataSource.h in Headers */,
+				388B990514588125007990DE /* TCGridViewDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +355,8 @@
 				91FF41781430EB0A00293476 /* TCBaseListViewModel.m in Sources */,
 				91FF418B1430FA3700293476 /* TCTableViewController.m in Sources */,
 				91FF418F1430FC1100293476 /* TCBaseListViewController.m in Sources */,
+				388B98FF14588125007990DE /* TCGridCellView.m in Sources */,
+				388B990314588125007990DE /* TCGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
