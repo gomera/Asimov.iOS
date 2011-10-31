@@ -22,13 +22,13 @@
 		9120E158142798750071ACD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9120E156142798750071ACD6 /* InfoPlist.strings */; };
 		9120E15B142798750071ACD6 /* TeracodeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9120E15A142798750071ACD6 /* TeracodeTests.h */; };
 		9120E15D142798750071ACD6 /* TeracodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E15C142798750071ACD6 /* TeracodeTests.m */; };
-		9120E172142798B60071ACD6 /* TCAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E16F142798B60071ACD6 /* TCAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9120E172142798B60071ACD6 /* TCAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E16F142798B60071ACD6 /* TCAppDelegate.h */; settings = {ATTRIBUTES = (); }; };
 		9120E173142798B60071ACD6 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E170142798B60071ACD6 /* TCAppDelegate.m */; };
 		9120E174142798B60071ACD6 /* TCAppDelegate+SwitchViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E171142798B60071ACD6 /* TCAppDelegate+SwitchViews.m */; };
-		9120E19514279BDD0071ACD6 /* TCBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E19214279BDD0071ACD6 /* TCBaseViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9120E19514279BDD0071ACD6 /* TCBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E19214279BDD0071ACD6 /* TCBaseViewModel.h */; settings = {ATTRIBUTES = (); }; };
 		9120E19614279BDD0071ACD6 /* TCBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E19314279BDD0071ACD6 /* TCBaseViewModel.m */; };
-		9120E19714279BDD0071ACD6 /* TCViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E19414279BDD0071ACD6 /* TCViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9120E19B1427A9050071ACD6 /* TCBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E1991427A9050071ACD6 /* TCBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9120E19714279BDD0071ACD6 /* TCViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E19414279BDD0071ACD6 /* TCViewModel.h */; settings = {ATTRIBUTES = (); }; };
+		9120E19B1427A9050071ACD6 /* TCBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E1991427A9050071ACD6 /* TCBaseViewController.h */; settings = {ATTRIBUTES = (); }; };
 		9120E19C1427A9050071ACD6 /* TCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E19A1427A9050071ACD6 /* TCBaseViewController.m */; };
 		9120E1A01427AC690071ACD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E19F1427AC690071ACD6 /* UIKit.framework */; };
 		91FF41771430EB0A00293476 /* TCBaseListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FF41751430EB0A00293476 /* TCBaseListViewModel.h */; };
@@ -404,6 +404,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -418,6 +419,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -486,6 +488,53 @@
 			};
 			name = Release;
 		};
+		E493CADF145E2BFD00439946 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
+		E493CAE0145E2BFD00439946 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/Teracode.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Distribution;
+		};
+		E493CAE1145E2BFD00439946 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeracodeTests/TeracodeTests-Prefix.pch";
+				INFOPLIST_FILE = "TeracodeTests/TeracodeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,6 +543,7 @@
 			buildConfigurations = (
 				9120E15E142798750071ACD6 /* Debug */,
 				9120E15F142798750071ACD6 /* Release */,
+				E493CADF145E2BFD00439946 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -503,6 +553,7 @@
 			buildConfigurations = (
 				9120E161142798750071ACD6 /* Debug */,
 				9120E162142798750071ACD6 /* Release */,
+				E493CAE0145E2BFD00439946 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -512,6 +563,7 @@
 			buildConfigurations = (
 				9120E164142798750071ACD6 /* Debug */,
 				9120E165142798750071ACD6 /* Release */,
+				E493CAE1145E2BFD00439946 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
