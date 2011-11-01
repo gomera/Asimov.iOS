@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
+		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
 		388B98FF14588125007990DE /* TCGridCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B98F714588125007990DE /* TCGridCellView.m */; };
 		388B990014588125007990DE /* TCGridCellView+GridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F814588125007990DE /* TCGridCellView+GridView.h */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
+		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
 		388B98F714588125007990DE /* TCGridCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCGridCellView.m; path = Grid/TCGridCellView.m; sourceTree = "<group>"; };
 		388B98F814588125007990DE /* TCGridCellView+GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TCGridCellView+GridView.h"; path = "Grid/TCGridCellView+GridView.h"; sourceTree = "<group>"; };
@@ -108,9 +112,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218104DD14607557000BBDB9 /* LockUI */ = {
+			isa = PBXGroup;
+			children = (
+				218104DF1460756E000BBDB9 /* TCLockUI.h */,
+				218104E01460756E000BBDB9 /* TCLockUI.m */,
+			);
+			name = LockUI;
+			sourceTree = "<group>";
+		};
 		388B98F3145880C1007990DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				218104DD14607557000BBDB9 /* LockUI */,
 				388B98F5145880C8007990DE /* Grid */,
 			);
 			name = Components;
@@ -247,6 +261,7 @@
 				388B990214588125007990DE /* TCGridView.h in Headers */,
 				388B990414588125007990DE /* TCGridViewDataSource.h in Headers */,
 				388B990514588125007990DE /* TCGridViewDelegate.h in Headers */,
+				218104E11460756E000BBDB9 /* TCLockUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +372,7 @@
 				91FF418F1430FC1100293476 /* TCBaseListViewController.m in Sources */,
 				388B98FF14588125007990DE /* TCGridCellView.m in Sources */,
 				388B990314588125007990DE /* TCGridView.m in Sources */,
+				218104E21460756E000BBDB9 /* TCLockUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,14 +38,6 @@
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        [self initialize];
-    }
-    return self;
-}
-
 - (void)dealloc {
     if (self == viewModel.delegate) {
         // ensure that viewModel will not send new delegate messages
