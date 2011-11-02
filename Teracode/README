@@ -1,6 +1,6 @@
-=====================================================================================================================
+
 To add the Teracode Proyecto to your library, do the following:
-=====================================================================================================================
+=======================================================================================
 
 1) Add the reference to the proyect: Project Configuration => Build Phases => Link Binary with Libraries =>
 Add (+) => Add other. Search the path of the proyect and select it. 
@@ -19,9 +19,9 @@ the file Teracode.a
 
 5) Use it. To add the imports, you have to add this: "import <Teracode/File.h>"
 
-=====================================================================================================================
+
 Para agregar el proyecto como libreria hacer lo siguiente:
-=====================================================================================================================
+=======================================================================================
 
 1) Agregar la referencia al proyecto: Configuracion del proyecto => Build Phases =>  Link Binary with 
 Libraries => Agregar (+) => Add other Buscar el directorio donde se encuentre el proyecto y seleccionarlo. 
@@ -40,3 +40,17 @@ el archivo Teracode.a
 
 5) Comenzar a utilizarlo. Para hacer los imports, basta con agregar "import <Teracode/File.h>" (Teracode es la carpeta 
 en la cual se encuentran los .h, si se desea acceder a otro, agregar el path relativo).
+
+
+Agregar el proyecto como submodulo en GIT
+=======================================================================================
+1) Abrir una consola, y en el raiz del proyecto destino ejecutar:
+git submodules add http://gerrit.teracode.com:8082/iPhone-Architecture teracode
+
+2) Luego hay que inicializar el modulo
+git submodules init
+
+3) Por ultimo hay que bajarse el codigo de modulo con el siguiente comando:
+git submodules update
+
+En el submodule, se puede trabajar como cualquier otro proyecto GIT.

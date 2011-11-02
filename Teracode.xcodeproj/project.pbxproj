@@ -54,7 +54,6 @@
 /* Begin PBXFileReference section */
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
-		218104FB14618E8C000BBDB9 /* Install */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Install; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
 		388B98F714588125007990DE /* TCGridCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCGridCellView.m; path = Grid/TCGridCellView.m; sourceTree = "<group>"; };
 		388B98F814588125007990DE /* TCGridCellView+GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TCGridCellView+GridView.h"; path = "Grid/TCGridCellView+GridView.h"; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		91FF41891430FA3700293476 /* TCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTableViewController.m; sourceTree = "<group>"; };
 		91FF418C1430FC1100293476 /* TCBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBaseListViewController.h; sourceTree = "<group>"; };
 		91FF418D1430FC1100293476 /* TCBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBaseListViewController.m; sourceTree = "<group>"; };
+		E493CB0B1461B59E00439946 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,8 @@
 		9120E143142798750071ACD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E493CB0B1461B59E00439946 /* README */,
 				9120E144142798750071ACD6 /* Teracode-Prefix.pch */,
-				218104FB14618E8C000BBDB9 /* Install */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
