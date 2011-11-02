@@ -13,7 +13,7 @@
 
 
 /*
- this category is intended to show this interface to GEGridView
+ this category is intended to show this interface to TCGridView
  and hide it to the rest of the app
 */
 @interface TCGridCellView (GridView)
