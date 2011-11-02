@@ -1,0 +1,42 @@
+=====================================================================================================================
+To add the Teracode Proyecto to your library, do the following:
+=====================================================================================================================
+
+1) Add the reference to the proyect: Project Configuration => Build Phases => Link Binary with Libraries =>
+Add (+) => Add other. Search the path of the proyect and select it. 
+(Move to frameworks group)
+
+2) Add the search path to find interfaces: Configuration Project => Build Settings => Search the key 
+"Header Search Paths". On the nodes, put the relative path of the Teracode project, 
+like : "../../Arquitectura/iPhone-Architecture". To get the path, you could select the Teracode project, and
+on the right window, on details, there is a property with that path.
+
+3) Setup the dependencies: Go to Project Configuration => Build Phases => Target Dependencies => Add (+)
+=> Select the added framework.
+
+4) Go again to the Project Configuration => Build Phases =>  Link Binary with Libraries => Add (+) => Select
+the file Teracode.a
+
+5) Use it. To add the imports, you have to add this: "import <Teracode/File.h>"
+
+=====================================================================================================================
+Para agregar el proyecto como libreria hacer lo siguiente:
+=====================================================================================================================
+
+1) Agregar la referencia al proyecto: Configuracion del proyecto => Build Phases =>  Link Binary with 
+Libraries => Agregar (+) => Add other Buscar el directorio donde se encuentre el proyecto y seleccionarlo. 
+(Moverlo a la parte de frameworks)
+
+2) Agregar el search path para que encuentre las interfaces: Ir a Configuracion del Proyecto => Build Settings 
+=> Buscar el key "Header Search Paths". En el nodo raiz, poner la direccion relativa al proyecto del framework,
+tipo: "../../Arquitectura/iPhone-Architecture/". Para saber el path exacto, pararse sobre el proyecto agregado 
+(el framework) y en la ventana de la derecha, en el detalle se muestra una property con el path relativo.
+
+3) Configurar las dependencias: Ir a Configuracion del Proyecto => Build Phases => Target Dependencies => Agregar (+)
+=> Seleccionar el framework agregado.
+
+4) Ir de nuevo a Configuracion del Proyecto => Build Phases =>  Link Binary with Libraries => Agregar (+) => Seleccionar
+el archivo Teracode.a
+
+5) Comenzar a utilizarlo. Para hacer los imports, basta con agregar "import <Teracode/File.h>" (Teracode es la carpeta 
+en la cual se encuentran los .h, si se desea acceder a otro, agregar el path relativo).
