@@ -1,9 +1,9 @@
 
-To add the Teracode Proyecto to your library, do the following:
+To add the Teracode Project to your library, do the following:
 =======================================================================================
 
-1) Add the reference to the proyect: Project Configuration => Build Phases => Link Binary with Libraries =>
-Add (+) => Add other. Search the path of the proyect and select it. 
+1) Add the reference to the proyect: Project Configuration => Targets => Build Phases => Link Binary with Libraries =>
+Add (+) => Add other. Search the path of the proyect and select the .xcodeproject file. 
 (Move to frameworks group)
 
 2) Add the search path to find interfaces: Configuration Project => Build Settings => Search the key 
@@ -23,8 +23,8 @@ the file Teracode.a
 Para agregar el proyecto como libreria hacer lo siguiente:
 =======================================================================================
 
-1) Agregar la referencia al proyecto: Configuracion del proyecto => Build Phases =>  Link Binary with 
-Libraries => Agregar (+) => Add other Buscar el directorio donde se encuentre el proyecto y seleccionarlo. 
+1) Agregar la referencia al proyecto: Configuracion del proyecto => Targets => Build Phases =>  Link Binary with 
+Libraries => Agregar (+) => Add other Buscar el directorio donde se encuentre el proyecto y seleccionar el xcodeproject . 
 (Moverlo a la parte de frameworks)
 
 2) Agregar el search path para que encuentre las interfaces: Ir a Configuracion del Proyecto => Build Settings 
@@ -32,7 +32,7 @@ Libraries => Agregar (+) => Add other Buscar el directorio donde se encuentre el
 tipo: "../../Arquitectura/iPhone-Architecture/". Para saber el path exacto, pararse sobre el proyecto agregado 
 (el framework) y en la ventana de la derecha, en el detalle se muestra una property con el path relativo.
 
-3) Configurar las dependencias: Ir a Configuracion del Proyecto => Build Phases => Target Dependencies => Agregar (+)
+3) Configurar las dependencias: Ir a Configuracion del Proyecto => Targets => Build Phases => Target Dependencies => Agregar (+)
 => Seleccionar el framework agregado.
 
 4) Ir de nuevo a Configuracion del Proyecto => Build Phases =>  Link Binary with Libraries => Agregar (+) => Seleccionar
@@ -45,12 +45,16 @@ en la cual se encuentran los .h, si se desea acceder a otro, agregar el path rel
 Agregar el proyecto como submodulo en GIT
 =======================================================================================
 1) Abrir una consola, y en el raiz del proyecto destino ejecutar:
-git submodules add http://gerrit.teracode.com:8082/iPhone-Architecture teracode
+git submodule add ssh://USERNAME@gerrit.teracode.com:8082/iPhone-Architecture teracode
 
 2) Luego hay que inicializar el modulo
-git submodules init
+git submodule init
+
+2.1) Editar el nuevo archivo creado .gitmodules y sacar el USERNAME de la URL generada
+
+2.2) Asegurarse que en .git/config la URL del modulo SI tenga USERNAME
 
 3) Por ultimo hay que bajarse el codigo de modulo con el siguiente comando:
-git submodules update
+git submodule update
 
 En el submodule, se puede trabajar como cualquier otro proyecto GIT.
