@@ -37,19 +37,19 @@
     return (status & TCViewModelStatusLoading) == TCViewModelStatusLoading;
 }
 
-- (void)willStartLoading:(BOOL)modal ref:(id)ref {
+- (void)willStartLoading {
     self.status = TCViewModelStatusLoading;
-    [self.delegate viewModel:self willStartLoading:modal ref:ref];
+    [self.delegate viewModelWillStartLoading:self];
 }
 
-- (void)didFinishLoading:(id)ref {
+- (void)didFinishLoading {
     self.status = TCViewModelStatusLoaded;
-    [self.delegate viewModel:self didFinishLoading:ref];
+    [self.delegate viewModelDidFinishLoading:self];
 }
 
-- (void)didFailLoadingWithError:(NSError *)error ref:(id)ref {
+- (void)didFailLoadingWithError:(NSError *)error {
     self.status = TCViewModelStatusUnloaded;
-    [self.delegate viewModel:self didFailLoadingWithError:error ref:ref];
+    [self.delegate viewModel:self didFailLoadingWithError:error];
 }
 
 @end

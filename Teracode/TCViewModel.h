@@ -11,18 +11,13 @@
 @protocol TCViewModelDelegate <NSObject>
 
 //  The ViewModel starts to load asynchronous data.
-//  ref is a reference to a object that will be sended back when the load ends.
-- (void)viewModel:(id<TCViewModel>)viewModel willStartLoading:(BOOL)modal ref:(id)ref;
+- (void)viewModelWillStartLoading:(id<TCViewModel>)viewModel;
 
 //  The ViewModel finish loading data.
-//  ref is a reference to a object previously sended in willStartLoading.
-//      Could be nil if the loading was synchronized.
-- (void)viewModel:(id<TCViewModel>)viewModel didFinishLoading:(id)ref;
+- (void)viewModelDidFinishLoading:(id<TCViewModel>)viewModel;
 
 //  The ViewModel failed to load data.
-//  ref is a reference to a object previously sended in willStartLoading.
-//      Could be nil if the loading was synchronized.
-- (void)viewModel:(id<TCViewModel>)viewModel didFailLoadingWithError:(NSError *)error ref:(id)ref;
+- (void)viewModel:(id<TCViewModel>)viewModel didFailLoadingWithError:(NSError *)error;
 
 @end
 

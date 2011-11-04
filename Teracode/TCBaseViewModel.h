@@ -33,12 +33,12 @@ typedef enum {
 - (BOOL)dataIsLoading;
 
 //  Call this method when starting an async data loading
-- (void)willStartLoading:(BOOL)modal ref:(id)ref;
+- (void)willStartLoading;
 
 //  Call this method when loading finishes
-- (void)didFinishLoading:(id)ref;
+- (void)didFinishLoading;
 
 //  Call this method when loading fails
-- (void)didFailLoadingWithError:(NSError *)error ref:(id)ref;
+- (void)didFailLoadingWithError:(NSError *)error;
 
 @end

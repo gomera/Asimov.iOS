@@ -12,9 +12,6 @@
 @interface TCBaseViewController : UIViewController <TCViewModelDelegate> {
     @private
     id<TCViewModel> viewModel;
-    
-    // current non modal loading / saving refs
-    NSMutableArray *loadingRefs;
 }
 
 @property (nonatomic, retain) id<TCViewModel> viewModel;
@@ -43,19 +40,6 @@
 
 //  Hides the non-modal loading indicator.
 - (void)hideLoadingView;
-
-//  Shows a loading indicator.
-//  modal: the app can't be used until the load finishes.
-//  ref: a reference to later hide the indicator, useful if there are several
-//      loadings at the same time.
-//  Default implementation: call showLoadingView first time a non-modal
-//      loading starts. Display the modal indicator when modal.
-- (void)showLoadingView:(BOOL)modal ref:(id)ref;
-
-//  Hides the loading indicator started by the given ref (modal and non-modal).
-//  Default implementation: removes the non-modal indicator when the loadings count
-//      reachs zero.
-- (void)hideLoadingView:(id)ref;
 
 @end
 
