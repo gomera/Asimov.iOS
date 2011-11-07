@@ -4,4 +4,30 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+
+#import "NSException+TeraCode.h"
+#import "NSDictionary+TeraCode.h"
+
+
+
+// Define a couple of custom loggers. extendedCustomLog() logs the line, class and class-method
+// where the log was called, and customLog() acts exactly as NSLog().
+// Both methods do nothing if HIDE_LOGS is defined (remember to define this variable in release)
+#ifndef HIDE_LOGS
+#define extendedCustomLog(format,...) NSLog((@"%s [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define customLog(format,...) NSLog((@"" format), ##__VA_ARGS__);
+#else
+#define extendedCustomLog(format,...)
+#define customLog(format,...)
+#endif
+
+
+#define NSNUMBER_YES [NSNumber numberWithBool:YES]
+#define NSNUMBER_NO [NSNumber numberWithBool:NO]
+
+
+#define TC_NETWORKING_LOADING_START_NOTIFICATION @"TCNetworkingLoadingStartNotification"
+#define TC_NETWORKING_LOADING_STOP_NOTIFICATION @"TCNetworkingLoadingStopNotification"
+
+
 #endif
