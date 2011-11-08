@@ -11,23 +11,29 @@
 
 @implementation TeracodeTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
     
     // Set-up code here.
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
     // Tear-down code here.
     
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in TeracodeTests");
+- (void)testSuccess {
+    GHAssertTrue(true, @"Trivial test that will never fail");
+}
+
+- (void) testMock {
+    id mock = [self mockForClass: [NSString class]];
+    GHAssertNotNil(mock, @"Mock was not created");
+    
+    NSString *stubStringResponse = @"testlowercase";
+    [[[mock stub] andReturn: stubStringResponse] lowercaseString];
+    GHAssertEqualStrings(stubStringResponse, [mock lowercaseString], @"OCMock is not working as expected");
 }
 
 @end

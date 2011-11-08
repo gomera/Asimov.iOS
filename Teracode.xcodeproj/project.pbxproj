@@ -29,7 +29,6 @@
 		9120E152142798750071ACD6 /* libTeracode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E13D142798750071ACD6 /* libTeracode.a */; };
 		9120E158142798750071ACD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9120E156142798750071ACD6 /* InfoPlist.strings */; };
 		9120E15B142798750071ACD6 /* TeracodeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9120E15A142798750071ACD6 /* TeracodeTests.h */; };
-		9120E15D142798750071ACD6 /* TeracodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E15C142798750071ACD6 /* TeracodeTests.m */; };
 		9120E172142798B60071ACD6 /* TCAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9120E16F142798B60071ACD6 /* TCAppDelegate.h */; settings = {ATTRIBUTES = (); }; };
 		9120E173142798B60071ACD6 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E170142798B60071ACD6 /* TCAppDelegate.m */; };
 		9120E174142798B60071ACD6 /* TCAppDelegate+SwitchViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E171142798B60071ACD6 /* TCAppDelegate+SwitchViews.m */; };
@@ -95,6 +94,15 @@
 		E488955514647D1F007DE089 /* NSDictionary+TeraCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E488955314647D1F007DE089 /* NSDictionary+TeraCode.m */; };
 		E4C380221464C07A0011F6BC /* TCNullParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C380201464C07A0011F6BC /* TCNullParser.h */; };
 		E4C380231464C07A0011F6BC /* TCNullParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C380211464C07A0011F6BC /* TCNullParser.m */; };
+		E420F129146833E000F1F291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E19F1427AC690071ACD6 /* UIKit.framework */; };
+		E420F12A146833E000F1F291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E140142798750071ACD6 /* Foundation.framework */; };
+		E420F12B146833E000F1F291 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E14E142798750071ACD6 /* CoreGraphics.framework */; };
+		E420F131146833E000F1F291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E420F12F146833E000F1F291 /* InfoPlist.strings */; };
+		E420F134146833E000F1F291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F133146833E000F1F291 /* main.m */; };
+		E420F14E14683E8F00F1F291 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */; };
+		E420F14F1468576700F1F291 /* TeracodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E15C142798750071ACD6 /* TeracodeTests.m */; };
+		E420F1681468767300F1F291 /* TCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F1671468767300F1F291 /* TCTestCase.m */; };
+		E420F19314697B2B00F1F291 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F19214697B2B00F1F291 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +205,21 @@
 		E488954F14645CF5007DE089 /* NSException+TeraCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+TeraCode.m"; sourceTree = "<group>"; };
 		E488955214647D1E007DE089 /* NSDictionary+TeraCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TeraCode.h"; sourceTree = "<group>"; };
 		E488955314647D1F007DE089 /* NSDictionary+TeraCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TeraCode.m"; sourceTree = "<group>"; };
+		E420F127146833E000F1F291 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E420F12E146833E000F1F291 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		E420F130146833E000F1F291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E420F132146833E000F1F291 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		E420F133146833E000F1F291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/GHUnitIOS.framework; sourceTree = "<group>"; };
+		E420F1661468767300F1F291 /* TCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTestCase.h; sourceTree = "<group>"; };
+		E420F1671468767300F1F291 /* TCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTestCase.m; sourceTree = "<group>"; };
+		E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		E420F18D14697B2B00F1F291 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		E420F18E14697B2B00F1F291 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		E420F18F14697B2B00F1F291 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		E420F19014697B2B00F1F291 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		E420F19114697B2B00F1F291 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		E420F19214697B2B00F1F291 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		E493CB0B1461B59E00439946 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		E4C380201464C07A0011F6BC /* TCNullParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNullParser.h; sourceTree = "<group>"; };
 		E4C380211464C07A0011F6BC /* TCNullParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNullParser.m; sourceTree = "<group>"; };
@@ -219,6 +242,18 @@
 				9120E14D142798750071ACD6 /* Foundation.framework in Frameworks */,
 				9120E14F142798750071ACD6 /* CoreGraphics.framework in Frameworks */,
 				9120E152142798750071ACD6 /* libTeracode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E420F124146833E000F1F291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E420F14E14683E8F00F1F291 /* GHUnitIOS.framework in Frameworks */,
+				E420F129146833E000F1F291 /* UIKit.framework in Frameworks */,
+				E420F12A146833E000F1F291 /* Foundation.framework in Frameworks */,
+				E420F12B146833E000F1F291 /* CoreGraphics.framework in Frameworks */,
+				E420F19314697B2B00F1F291 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +301,7 @@
 			children = (
 				9120E142142798750071ACD6 /* Teracode */,
 				9120E153142798750071ACD6 /* TeracodeTests */,
+				E420F12C146833E000F1F291 /* Tests */,
 				9120E13F142798750071ACD6 /* Frameworks */,
 				9120E13E142798750071ACD6 /* Products */,
 			);
@@ -276,6 +312,7 @@
 			children = (
 				9120E13D142798750071ACD6 /* libTeracode.a */,
 				9120E14A142798750071ACD6 /* TeracodeTests.octest */,
+				E420F127146833E000F1F291 /* Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +320,8 @@
 		9120E13F142798750071ACD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E420F18914697B2B00F1F291 /* OCMock */,
+				E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */,
 				9120E140142798750071ACD6 /* Foundation.framework */,
 				9120E19F1427AC690071ACD6 /* UIKit.framework */,
 				9120E14E142798750071ACD6 /* CoreGraphics.framework */,
@@ -319,6 +358,8 @@
 			children = (
 				9120E15A142798750071ACD6 /* TeracodeTests.h */,
 				9120E15C142798750071ACD6 /* TeracodeTests.m */,
+				E420F1661468767300F1F291 /* TCTestCase.h */,
+				E420F1671468767300F1F291 /* TCTestCase.m */,
 				9120E154142798750071ACD6 /* Supporting Files */,
 			);
 			path = TeracodeTests;
@@ -450,6 +491,56 @@
 			);
 			path = Utils;
 			sourceTree = "<group>";
+                };
+		E420F12C146833E000F1F291 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E420F12D146833E000F1F291 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E420F12D146833E000F1F291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E420F12E146833E000F1F291 /* Tests-Info.plist */,
+				E420F12F146833E000F1F291 /* InfoPlist.strings */,
+				E420F132146833E000F1F291 /* Tests-Prefix.pch */,
+				E420F133146833E000F1F291 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E420F18914697B2B00F1F291 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18A14697B2B00F1F291 /* Headers */,
+				E420F19214697B2B00F1F291 /* libOCMock.a */,
+			);
+			name = OCMock;
+			path = Tests/OCMock;
+			sourceTree = "<group>";
+		};
+		E420F18A14697B2B00F1F291 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18B14697B2B00F1F291 /* OCMock */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		E420F18B14697B2B00F1F291 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */,
+				E420F18D14697B2B00F1F291 /* OCMArg.h */,
+				E420F18E14697B2B00F1F291 /* OCMConstraint.h */,
+				E420F18F14697B2B00F1F291 /* OCMock.h */,
+				E420F19014697B2B00F1F291 /* OCMockObject.h */,
+				E420F19114697B2B00F1F291 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -543,6 +634,23 @@
 			productReference = 9120E14A142798750071ACD6 /* TeracodeTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		E420F126146833E000F1F291 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E420F149146833E000F1F291 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				E420F123146833E000F1F291 /* Sources */,
+				E420F124146833E000F1F291 /* Frameworks */,
+				E420F125146833E000F1F291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E420F127146833E000F1F291 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -565,6 +673,7 @@
 			targets = (
 				9120E13C142798750071ACD6 /* Teracode */,
 				9120E149142798750071ACD6 /* TeracodeTests */,
+				E420F126146833E000F1F291 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -576,6 +685,14 @@
 			files = (
 				9120E158142798750071ACD6 /* InfoPlist.strings in Resources */,
 				9120E15B142798750071ACD6 /* TeracodeTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E420F125146833E000F1F291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E420F131146833E000F1F291 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +763,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9120E15D142798750071ACD6 /* TeracodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E420F123146833E000F1F291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E420F134146833E000F1F291 /* main.m in Sources */,
+				E420F14F1468576700F1F291 /* TeracodeTests.m in Sources */,
+				E420F1681468767300F1F291 /* TCTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +791,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				9120E157142798750071ACD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E420F12F146833E000F1F291 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E420F130146833E000F1F291 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -711,6 +845,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/Teracode.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Tests\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -723,6 +861,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/Teracode.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Tests\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -770,6 +912,95 @@
 			};
 			name = Release;
 		};
+		E420F146146833E000F1F291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/OCMock/Headers";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E420F147146833E000F1F291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/OCMock/Headers";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests/OCMock",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E420F148146833E000F1F291 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/OCMock/Headers";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Tests/OCMock",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
 		E493CADF145E2BFD00439946 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -790,6 +1021,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/Teracode.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Tests\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Teracode/Teracode-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -846,6 +1081,16 @@
 				9120E164142798750071ACD6 /* Debug */,
 				9120E165142798750071ACD6 /* Release */,
 				E493CAE1145E2BFD00439946 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E420F149146833E000F1F291 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E420F146146833E000F1F291 /* Debug */,
+				E420F147146833E000F1F291 /* Release */,
+				E420F148146833E000F1F291 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
