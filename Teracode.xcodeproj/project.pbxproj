@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9AE146C22E0005FE7C9 /* UIAlertView+Teracode.h */; };
+		210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */; };
+		210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */; };
+		210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */; };
 		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
 		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
@@ -102,6 +106,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210EB9AE146C22E0005FE7C9 /* UIAlertView+Teracode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Teracode.h"; sourceTree = "<group>"; };
+		210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Teracode.m"; sourceTree = "<group>"; };
+		210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Teracode.h"; sourceTree = "<group>"; };
+		210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Teracode.m"; sourceTree = "<group>"; };
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
@@ -429,6 +437,10 @@
 				E488954F14645CF5007DE089 /* NSException+TeraCode.m */,
 				E488955214647D1E007DE089 /* NSDictionary+TeraCode.h */,
 				E488955314647D1F007DE089 /* NSDictionary+TeraCode.m */,
+				210EB9AE146C22E0005FE7C9 /* UIAlertView+Teracode.h */,
+				210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */,
+				210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */,
+				210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -480,6 +492,8 @@
 				E488955014645CF5007DE089 /* NSException+TeraCode.h in Headers */,
 				E488955414647D1F007DE089 /* NSDictionary+TeraCode.h in Headers */,
 				E4C380221464C07A0011F6BC /* TCNullParser.h in Headers */,
+				210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */,
+				210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +629,8 @@
 				E488955114645CF5007DE089 /* NSException+TeraCode.m in Sources */,
 				E488955514647D1F007DE089 /* NSDictionary+TeraCode.m in Sources */,
 				E4C380231464C07A0011F6BC /* TCNullParser.m in Sources */,
+				210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */,
+				210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
