@@ -6,9 +6,6 @@
 //  Copyright 2011 Teracode. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-
 @interface NSException (NSException_TeraCode)
 
 + (void) throwUnsupportedException;

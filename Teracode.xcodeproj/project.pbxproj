@@ -11,6 +11,8 @@
 		210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */; };
 		210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */; };
 		210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */; };
+		210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9EF146C38DB005FE7C9 /* TCSingleton.h */; };
+		210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9F0146C38DB005FE7C9 /* TCSingleton.m */; };
 		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
 		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
@@ -110,6 +112,8 @@
 		210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Teracode.m"; sourceTree = "<group>"; };
 		210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Teracode.h"; sourceTree = "<group>"; };
 		210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Teracode.m"; sourceTree = "<group>"; };
+		210EB9EF146C38DB005FE7C9 /* TCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSingleton.h; sourceTree = "<group>"; };
+		210EB9F0146C38DB005FE7C9 /* TCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleton.m; sourceTree = "<group>"; };
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
@@ -441,6 +445,8 @@
 				210EB9AF146C22E0005FE7C9 /* UIAlertView+Teracode.m */,
 				210EB9B7146C2412005FE7C9 /* UIView+Teracode.h */,
 				210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */,
+				210EB9EF146C38DB005FE7C9 /* TCSingleton.h */,
+				210EB9F0146C38DB005FE7C9 /* TCSingleton.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				E4C380221464C07A0011F6BC /* TCNullParser.h in Headers */,
 				210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */,
 				210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */,
+				210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +638,7 @@
 				E4C380231464C07A0011F6BC /* TCNullParser.m in Sources */,
 				210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */,
 				210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */,
+				210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

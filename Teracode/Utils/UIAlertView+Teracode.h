@@ -6,7 +6,6 @@
 //  Copyright (c) 2011 Teracode. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface UIAlertView (UIAlertView_Teracode)
