@@ -154,7 +154,7 @@
 	[self.delegate apiCall: self didFinishWithError: error];
 }
 
-- (void) connectionDidFinishWithData: (NSData *) data response: (NSHTTPURLResponse *) response {
+- (void) connectionDidFinishWithData: (NSData *)data response: (NSHTTPURLResponse *)response {
 	NSError *error = nil;
 	if ([self checkResponse: response error: &error] && [self processResponse: data error: &error]) {
         [self.delegate apiCallDidFinishSuccessfully: self];

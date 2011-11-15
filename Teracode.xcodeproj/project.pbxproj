@@ -13,6 +13,8 @@
 		210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */; };
 		210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9EF146C38DB005FE7C9 /* TCSingleton.h */; };
 		210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9F0146C38DB005FE7C9 /* TCSingleton.m */; };
+		216C633B14715AFC001289C2 /* UIView+TestCategoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 216C633914715AFB001289C2 /* UIView+TestCategoryView.h */; };
+		216C633C14715AFC001289C2 /* UIView+TestCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */; };
 		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
 		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
@@ -80,14 +82,14 @@
 		E488954214634096007DE089 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953514634096007DE089 /* NSObject+SBJSON.m */; };
 		E488954314634096007DE089 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953614634096007DE089 /* NSString+SBJSON.h */; };
 		E488954414634096007DE089 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953714634096007DE089 /* NSString+SBJSON.m */; };
-		E488954514634096007DE089 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953814634096007DE089 /* SBJSON.h */; };
-		E488954614634096007DE089 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953914634096007DE089 /* SBJSON.m */; };
-		E488954714634096007DE089 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953A14634096007DE089 /* SBJsonBase.h */; };
-		E488954814634096007DE089 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953B14634096007DE089 /* SBJsonBase.m */; };
-		E488954914634096007DE089 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953C14634096007DE089 /* SBJsonParser.h */; };
-		E488954A14634096007DE089 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953D14634096007DE089 /* SBJsonParser.m */; };
-		E488954B14634096007DE089 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953E14634096007DE089 /* SBJsonWriter.h */; };
-		E488954C14634096007DE089 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953F14634096007DE089 /* SBJsonWriter.m */; };
+		E488954514634096007DE089 /* TCSBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953814634096007DE089 /* TCSBJSON.h */; };
+		E488954614634096007DE089 /* TCSBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953914634096007DE089 /* TCSBJSON.m */; };
+		E488954714634096007DE089 /* TCSBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953A14634096007DE089 /* TCSBJsonBase.h */; };
+		E488954814634096007DE089 /* TCSBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953B14634096007DE089 /* TCSBJsonBase.m */; };
+		E488954914634096007DE089 /* TCSBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953C14634096007DE089 /* TCSBJsonParser.h */; };
+		E488954A14634096007DE089 /* TCSBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953D14634096007DE089 /* TCSBJsonParser.m */; };
+		E488954B14634096007DE089 /* TCSBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E488953E14634096007DE089 /* TCSBJsonWriter.h */; };
+		E488954C14634096007DE089 /* TCSBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E488953F14634096007DE089 /* TCSBJsonWriter.m */; };
 		E488955014645CF5007DE089 /* NSException+TeraCode.h in Headers */ = {isa = PBXBuildFile; fileRef = E488954E14645CF5007DE089 /* NSException+TeraCode.h */; };
 		E488955114645CF5007DE089 /* NSException+TeraCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E488954F14645CF5007DE089 /* NSException+TeraCode.m */; };
 		E488955414647D1F007DE089 /* NSDictionary+TeraCode.h in Headers */ = {isa = PBXBuildFile; fileRef = E488955214647D1E007DE089 /* NSDictionary+TeraCode.h */; };
@@ -122,6 +124,8 @@
 		210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Teracode.m"; sourceTree = "<group>"; };
 		210EB9EF146C38DB005FE7C9 /* TCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSingleton.h; sourceTree = "<group>"; };
 		210EB9F0146C38DB005FE7C9 /* TCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleton.m; sourceTree = "<group>"; };
+		216C633914715AFB001289C2 /* UIView+TestCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TestCategoryView.h"; sourceTree = "<group>"; };
+		216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TestCategoryView.m"; sourceTree = "<group>"; };
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
@@ -193,14 +197,14 @@
 		E488953514634096007DE089 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "JSON/NSObject+SBJSON.m"; sourceTree = "<group>"; };
 		E488953614634096007DE089 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "JSON/NSString+SBJSON.h"; sourceTree = "<group>"; };
 		E488953714634096007DE089 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "JSON/NSString+SBJSON.m"; sourceTree = "<group>"; };
-		E488953814634096007DE089 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = JSON/SBJSON.h; sourceTree = "<group>"; };
-		E488953914634096007DE089 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = JSON/SBJSON.m; sourceTree = "<group>"; };
-		E488953A14634096007DE089 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = JSON/SBJsonBase.h; sourceTree = "<group>"; };
-		E488953B14634096007DE089 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = JSON/SBJsonBase.m; sourceTree = "<group>"; };
-		E488953C14634096007DE089 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = JSON/SBJsonParser.h; sourceTree = "<group>"; };
-		E488953D14634096007DE089 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = JSON/SBJsonParser.m; sourceTree = "<group>"; };
-		E488953E14634096007DE089 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = JSON/SBJsonWriter.h; sourceTree = "<group>"; };
-		E488953F14634096007DE089 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = JSON/SBJsonWriter.m; sourceTree = "<group>"; };
+		E488953814634096007DE089 /* TCSBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCSBJSON.h; path = JSON/TCSBJSON.h; sourceTree = "<group>"; };
+		E488953914634096007DE089 /* TCSBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCSBJSON.m; path = JSON/TCSBJSON.m; sourceTree = "<group>"; };
+		E488953A14634096007DE089 /* TCSBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCSBJsonBase.h; path = JSON/TCSBJsonBase.h; sourceTree = "<group>"; };
+		E488953B14634096007DE089 /* TCSBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCSBJsonBase.m; path = JSON/TCSBJsonBase.m; sourceTree = "<group>"; };
+		E488953C14634096007DE089 /* TCSBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCSBJsonParser.h; path = JSON/TCSBJsonParser.h; sourceTree = "<group>"; };
+		E488953D14634096007DE089 /* TCSBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCSBJsonParser.m; path = JSON/TCSBJsonParser.m; sourceTree = "<group>"; };
+		E488953E14634096007DE089 /* TCSBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCSBJsonWriter.h; path = JSON/TCSBJsonWriter.h; sourceTree = "<group>"; };
+		E488953F14634096007DE089 /* TCSBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCSBJsonWriter.m; path = JSON/TCSBJsonWriter.m; sourceTree = "<group>"; };
 		E488954E14645CF5007DE089 /* NSException+TeraCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+TeraCode.h"; sourceTree = "<group>"; };
 		E488954F14645CF5007DE089 /* NSException+TeraCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+TeraCode.m"; sourceTree = "<group>"; };
 		E488955214647D1E007DE089 /* NSDictionary+TeraCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TeraCode.h"; sourceTree = "<group>"; };
@@ -463,14 +467,14 @@
 				E488953514634096007DE089 /* NSObject+SBJSON.m */,
 				E488953614634096007DE089 /* NSString+SBJSON.h */,
 				E488953714634096007DE089 /* NSString+SBJSON.m */,
-				E488953814634096007DE089 /* SBJSON.h */,
-				E488953914634096007DE089 /* SBJSON.m */,
-				E488953A14634096007DE089 /* SBJsonBase.h */,
-				E488953B14634096007DE089 /* SBJsonBase.m */,
-				E488953C14634096007DE089 /* SBJsonParser.h */,
-				E488953D14634096007DE089 /* SBJsonParser.m */,
-				E488953E14634096007DE089 /* SBJsonWriter.h */,
-				E488953F14634096007DE089 /* SBJsonWriter.m */,
+				E488953814634096007DE089 /* TCSBJSON.h */,
+				E488953914634096007DE089 /* TCSBJSON.m */,
+				E488953A14634096007DE089 /* TCSBJsonBase.h */,
+				E488953B14634096007DE089 /* TCSBJsonBase.m */,
+				E488953C14634096007DE089 /* TCSBJsonParser.h */,
+				E488953D14634096007DE089 /* TCSBJsonParser.m */,
+				E488953E14634096007DE089 /* TCSBJsonWriter.h */,
+				E488953F14634096007DE089 /* TCSBJsonWriter.m */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -488,6 +492,8 @@
 				210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */,
 				210EB9EF146C38DB005FE7C9 /* TCSingleton.h */,
 				210EB9F0146C38DB005FE7C9 /* TCSingleton.m */,
+				216C633914715AFB001289C2 /* UIView+TestCategoryView.h */,
+				216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -582,16 +588,17 @@
 				E488954014634096007DE089 /* JSON.h in Headers */,
 				E488954114634096007DE089 /* NSObject+SBJSON.h in Headers */,
 				E488954314634096007DE089 /* NSString+SBJSON.h in Headers */,
-				E488954514634096007DE089 /* SBJSON.h in Headers */,
-				E488954714634096007DE089 /* SBJsonBase.h in Headers */,
-				E488954914634096007DE089 /* SBJsonParser.h in Headers */,
-				E488954B14634096007DE089 /* SBJsonWriter.h in Headers */,
+				E488954514634096007DE089 /* TCSBJSON.h in Headers */,
+				E488954714634096007DE089 /* TCSBJsonBase.h in Headers */,
+				E488954914634096007DE089 /* TCSBJsonParser.h in Headers */,
+				E488954B14634096007DE089 /* TCSBJsonWriter.h in Headers */,
 				E488955014645CF5007DE089 /* NSException+TeraCode.h in Headers */,
 				E488955414647D1F007DE089 /* NSDictionary+TeraCode.h in Headers */,
 				E4C380221464C07A0011F6BC /* TCNullParser.h in Headers */,
 				210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */,
 				210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */,
 				210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */,
+				216C633B14715AFC001289C2 /* UIView+TestCategoryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,16 +753,17 @@
 				E4889531146333D4007DE089 /* TCRequestFactory.m in Sources */,
 				E488954214634096007DE089 /* NSObject+SBJSON.m in Sources */,
 				E488954414634096007DE089 /* NSString+SBJSON.m in Sources */,
-				E488954614634096007DE089 /* SBJSON.m in Sources */,
-				E488954814634096007DE089 /* SBJsonBase.m in Sources */,
-				E488954A14634096007DE089 /* SBJsonParser.m in Sources */,
-				E488954C14634096007DE089 /* SBJsonWriter.m in Sources */,
+				E488954614634096007DE089 /* TCSBJSON.m in Sources */,
+				E488954814634096007DE089 /* TCSBJsonBase.m in Sources */,
+				E488954A14634096007DE089 /* TCSBJsonParser.m in Sources */,
+				E488954C14634096007DE089 /* TCSBJsonWriter.m in Sources */,
 				E488955114645CF5007DE089 /* NSException+TeraCode.m in Sources */,
 				E488955514647D1F007DE089 /* NSDictionary+TeraCode.m in Sources */,
 				E4C380231464C07A0011F6BC /* TCNullParser.m in Sources */,
 				210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */,
 				210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */,
 				210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */,
+				216C633C14715AFC001289C2 /* UIView+TestCategoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
