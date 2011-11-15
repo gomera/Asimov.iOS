@@ -13,8 +13,6 @@
 		210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */; };
 		210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 210EB9EF146C38DB005FE7C9 /* TCSingleton.h */; };
 		210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9F0146C38DB005FE7C9 /* TCSingleton.m */; };
-		216C633B14715AFC001289C2 /* UIView+TestCategoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 216C633914715AFB001289C2 /* UIView+TestCategoryView.h */; };
-		216C633C14715AFC001289C2 /* UIView+TestCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */; };
 		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
 		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
@@ -46,6 +44,15 @@
 		91FF418B1430FA3700293476 /* TCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF41891430FA3700293476 /* TCTableViewController.m */; };
 		91FF418E1430FC1100293476 /* TCBaseListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FF418C1430FC1100293476 /* TCBaseListViewController.h */; };
 		91FF418F1430FC1100293476 /* TCBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF418D1430FC1100293476 /* TCBaseListViewController.m */; };
+		E420F129146833E000F1F291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E19F1427AC690071ACD6 /* UIKit.framework */; };
+		E420F12A146833E000F1F291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E140142798750071ACD6 /* Foundation.framework */; };
+		E420F12B146833E000F1F291 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E14E142798750071ACD6 /* CoreGraphics.framework */; };
+		E420F131146833E000F1F291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E420F12F146833E000F1F291 /* InfoPlist.strings */; };
+		E420F134146833E000F1F291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F133146833E000F1F291 /* main.m */; };
+		E420F14E14683E8F00F1F291 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */; };
+		E420F14F1468576700F1F291 /* TeracodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E15C142798750071ACD6 /* TeracodeTests.m */; };
+		E420F1681468767300F1F291 /* TCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F1671468767300F1F291 /* TCTestCase.m */; };
+		E420F19314697B2B00F1F291 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F19214697B2B00F1F291 /* libOCMock.a */; };
 		E48894F8146333B4007DE089 /* TCAPICall.h in Headers */ = {isa = PBXBuildFile; fileRef = E48894F0146333B4007DE089 /* TCAPICall.h */; };
 		E48894F9146333B4007DE089 /* TCAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = E48894F1146333B4007DE089 /* TCAPICall.m */; };
 		E48894FA146333B4007DE089 /* TCFetchAPICall.h in Headers */ = {isa = PBXBuildFile; fileRef = E48894F2146333B4007DE089 /* TCFetchAPICall.h */; };
@@ -96,15 +103,6 @@
 		E488955514647D1F007DE089 /* NSDictionary+TeraCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E488955314647D1F007DE089 /* NSDictionary+TeraCode.m */; };
 		E4C380221464C07A0011F6BC /* TCNullParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C380201464C07A0011F6BC /* TCNullParser.h */; };
 		E4C380231464C07A0011F6BC /* TCNullParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C380211464C07A0011F6BC /* TCNullParser.m */; };
-		E420F129146833E000F1F291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E19F1427AC690071ACD6 /* UIKit.framework */; };
-		E420F12A146833E000F1F291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E140142798750071ACD6 /* Foundation.framework */; };
-		E420F12B146833E000F1F291 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9120E14E142798750071ACD6 /* CoreGraphics.framework */; };
-		E420F131146833E000F1F291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E420F12F146833E000F1F291 /* InfoPlist.strings */; };
-		E420F134146833E000F1F291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F133146833E000F1F291 /* main.m */; };
-		E420F14E14683E8F00F1F291 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */; };
-		E420F14F1468576700F1F291 /* TeracodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120E15C142798750071ACD6 /* TeracodeTests.m */; };
-		E420F1681468767300F1F291 /* TCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E420F1671468767300F1F291 /* TCTestCase.m */; };
-		E420F19314697B2B00F1F291 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E420F19214697B2B00F1F291 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +122,6 @@
 		210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Teracode.m"; sourceTree = "<group>"; };
 		210EB9EF146C38DB005FE7C9 /* TCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSingleton.h; sourceTree = "<group>"; };
 		210EB9F0146C38DB005FE7C9 /* TCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleton.m; sourceTree = "<group>"; };
-		216C633914715AFB001289C2 /* UIView+TestCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TestCategoryView.h"; sourceTree = "<group>"; };
-		216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TestCategoryView.m"; sourceTree = "<group>"; };
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
@@ -161,6 +157,21 @@
 		91FF41891430FA3700293476 /* TCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTableViewController.m; sourceTree = "<group>"; };
 		91FF418C1430FC1100293476 /* TCBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBaseListViewController.h; sourceTree = "<group>"; };
 		91FF418D1430FC1100293476 /* TCBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBaseListViewController.m; sourceTree = "<group>"; };
+		E420F127146833E000F1F291 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E420F12E146833E000F1F291 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		E420F130146833E000F1F291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E420F132146833E000F1F291 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		E420F133146833E000F1F291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/GHUnitIOS.framework; sourceTree = "<group>"; };
+		E420F1661468767300F1F291 /* TCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTestCase.h; sourceTree = "<group>"; };
+		E420F1671468767300F1F291 /* TCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTestCase.m; sourceTree = "<group>"; };
+		E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		E420F18D14697B2B00F1F291 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		E420F18E14697B2B00F1F291 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		E420F18F14697B2B00F1F291 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		E420F19014697B2B00F1F291 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		E420F19114697B2B00F1F291 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		E420F19214697B2B00F1F291 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		E48894F0146333B4007DE089 /* TCAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAPICall.h; sourceTree = "<group>"; };
 		E48894F1146333B4007DE089 /* TCAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAPICall.m; sourceTree = "<group>"; };
 		E48894F2146333B4007DE089 /* TCFetchAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCFetchAPICall.h; sourceTree = "<group>"; };
@@ -209,21 +220,6 @@
 		E488954F14645CF5007DE089 /* NSException+TeraCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+TeraCode.m"; sourceTree = "<group>"; };
 		E488955214647D1E007DE089 /* NSDictionary+TeraCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TeraCode.h"; sourceTree = "<group>"; };
 		E488955314647D1F007DE089 /* NSDictionary+TeraCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TeraCode.m"; sourceTree = "<group>"; };
-		E420F127146833E000F1F291 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E420F12E146833E000F1F291 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		E420F130146833E000F1F291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E420F132146833E000F1F291 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		E420F133146833E000F1F291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E420F14D14683E8F00F1F291 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/GHUnitIOS.framework; sourceTree = "<group>"; };
-		E420F1661468767300F1F291 /* TCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTestCase.h; sourceTree = "<group>"; };
-		E420F1671468767300F1F291 /* TCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTestCase.m; sourceTree = "<group>"; };
-		E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		E420F18D14697B2B00F1F291 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		E420F18E14697B2B00F1F291 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		E420F18F14697B2B00F1F291 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		E420F19014697B2B00F1F291 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		E420F19114697B2B00F1F291 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
-		E420F19214697B2B00F1F291 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		E493CB0B1461B59E00439946 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		E4C380201464C07A0011F6BC /* TCNullParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNullParser.h; sourceTree = "<group>"; };
 		E4C380211464C07A0011F6BC /* TCNullParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNullParser.m; sourceTree = "<group>"; };
@@ -404,6 +400,56 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		E420F12C146833E000F1F291 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E420F12D146833E000F1F291 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E420F12D146833E000F1F291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E420F12E146833E000F1F291 /* Tests-Info.plist */,
+				E420F12F146833E000F1F291 /* InfoPlist.strings */,
+				E420F132146833E000F1F291 /* Tests-Prefix.pch */,
+				E420F133146833E000F1F291 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E420F18914697B2B00F1F291 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18A14697B2B00F1F291 /* Headers */,
+				E420F19214697B2B00F1F291 /* libOCMock.a */,
+			);
+			name = OCMock;
+			path = Tests/OCMock;
+			sourceTree = "<group>";
+		};
+		E420F18A14697B2B00F1F291 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18B14697B2B00F1F291 /* OCMock */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		E420F18B14697B2B00F1F291 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */,
+				E420F18D14697B2B00F1F291 /* OCMArg.h */,
+				E420F18E14697B2B00F1F291 /* OCMConstraint.h */,
+				E420F18F14697B2B00F1F291 /* OCMock.h */,
+				E420F19014697B2B00F1F291 /* OCMockObject.h */,
+				E420F19114697B2B00F1F291 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		E48894DA146327CA007DE089 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,60 +538,8 @@
 				210EB9B8146C2412005FE7C9 /* UIView+Teracode.m */,
 				210EB9EF146C38DB005FE7C9 /* TCSingleton.h */,
 				210EB9F0146C38DB005FE7C9 /* TCSingleton.m */,
-				216C633914715AFB001289C2 /* UIView+TestCategoryView.h */,
-				216C633A14715AFB001289C2 /* UIView+TestCategoryView.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-                };
-		E420F12C146833E000F1F291 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E420F12D146833E000F1F291 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		E420F12D146833E000F1F291 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E420F12E146833E000F1F291 /* Tests-Info.plist */,
-				E420F12F146833E000F1F291 /* InfoPlist.strings */,
-				E420F132146833E000F1F291 /* Tests-Prefix.pch */,
-				E420F133146833E000F1F291 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E420F18914697B2B00F1F291 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				E420F18A14697B2B00F1F291 /* Headers */,
-				E420F19214697B2B00F1F291 /* libOCMock.a */,
-			);
-			name = OCMock;
-			path = Tests/OCMock;
-			sourceTree = "<group>";
-		};
-		E420F18A14697B2B00F1F291 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				E420F18B14697B2B00F1F291 /* OCMock */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		E420F18B14697B2B00F1F291 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				E420F18C14697B2B00F1F291 /* NSNotificationCenter+OCMAdditions.h */,
-				E420F18D14697B2B00F1F291 /* OCMArg.h */,
-				E420F18E14697B2B00F1F291 /* OCMConstraint.h */,
-				E420F18F14697B2B00F1F291 /* OCMock.h */,
-				E420F19014697B2B00F1F291 /* OCMockObject.h */,
-				E420F19114697B2B00F1F291 /* OCMockRecorder.h */,
-			);
-			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,7 +592,6 @@
 				210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */,
 				210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */,
 				210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */,
-				216C633B14715AFC001289C2 /* UIView+TestCategoryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +756,6 @@
 				210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */,
 				210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */,
 				210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */,
-				216C633C14715AFC001289C2 /* UIView+TestCategoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
