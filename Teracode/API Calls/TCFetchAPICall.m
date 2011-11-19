@@ -15,14 +15,23 @@
 	return self;
 }
 
-- (BOOL) processResponse: (NSData *) data error:(NSError **)error {
-	id<TCParser> parser = [[[[self class] parserClass] alloc] init];
+- (BOOL) processResponseData: (NSData *) data httpResponse: (NSHTTPURLResponse *) response error: (NSError **) error {
+    // Let the superclass process the response
+    BOOL result = [super processResponseData:data httpResponse:response error:error];
     
-    self.responseData = [parser parse: data encoding: self.job.encoding error: error];
-
-	[parser release];
+    // If everything went fine, parse the response
+    if (result) {
+        id<TCParser> parser = [[[[self class] parserClass] alloc] init];
+        
+        self.responseData = [parser parse: data encoding: self.job.encoding error: error];
+        
+        [parser release];
+        
+        // Set the result based on whether the response could be parsed without errors or not
+        result = (*error == nil);
+    }
     
-    return *error == nil;
+    return result;
 }
 
 - (void) dealloc {

@@ -69,11 +69,12 @@
 - (void) addFileParameter: (TCAttachment *) file forKey: (NSString *) key;
 - (void) addFileParameters: (NSDictionary *) values;
 
-// By default, this method just notifies the delegate about the successfull result
-- (BOOL) processResponse: (NSData *) data error: (NSError **) error;
-
-// This method should be reimplemented for custom error handling based on the HTTP response
-- (BOOL) checkResponse: (NSHTTPURLResponse *) response error: (NSError **) error;
+// This method should be overwritten to process the response data 
+// and check the HTTP response (if necessary).
+// The result of this method will be used to determine if the API 
+// call finished successfully, or with error, notifying the delegate.
+// The default implementation is empty and returns YES.
+- (BOOL) processResponseData: (NSData *) data httpResponse: (NSHTTPURLResponse *) response error: (NSError **) error;
 
 - (void) execute;
 - (void) cancel;

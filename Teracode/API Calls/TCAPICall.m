@@ -4,10 +4,6 @@
 #define API_AUTH_SEPARATOR @"--"
 #define API_MOCK_ATTRIBUTE_KEY @"mock";
 
-@interface TCAPICall ()
-- (BOOL) checkResponse: (NSHTTPURLResponse *) response error: (NSError **) error;
-@end
-
 @implementation TCAPICall
 
 @synthesize delegate;
@@ -139,11 +135,7 @@
 	[[TCNetworkManager manager] executeNextJob];
 }
 
-- (BOOL) processResponse: (NSData *) data error: (NSError **) error {
-    return YES;
-}
-
-- (BOOL) checkResponse: (NSHTTPURLResponse *) response error: (NSError **) error {    
+- (BOOL) processResponseData: (NSData *) data httpResponse: (NSHTTPURLResponse *) response error: (NSError **) error {
     return YES;
 }
 
@@ -156,7 +148,7 @@
 
 - (void) connectionDidFinishWithData: (NSData *)data response: (NSHTTPURLResponse *)response {
 	NSError *error = nil;
-	if ([self checkResponse: response error: &error] && [self processResponse: data error: &error]) {
+	if ([self processResponseData: data httpResponse: response error: &error]) {
         [self.delegate apiCallDidFinishSuccessfully: self];
 	} else {
 		[self.delegate apiCall: self didFinishWithError: error];
