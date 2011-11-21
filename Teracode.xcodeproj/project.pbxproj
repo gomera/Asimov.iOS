@@ -15,6 +15,8 @@
 		210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EB9F0146C38DB005FE7C9 /* TCSingleton.m */; };
 		218104E11460756E000BBDB9 /* TCLockUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 218104DF1460756E000BBDB9 /* TCLockUI.h */; };
 		218104E21460756E000BBDB9 /* TCLockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 218104E01460756E000BBDB9 /* TCLockUI.m */; };
+		21F6A9D8147A788F00652A65 /* TCPopUpView.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F6A9D6147A788F00652A65 /* TCPopUpView.h */; };
+		21F6A9D9147A788F00652A65 /* TCPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6A9D7147A788F00652A65 /* TCPopUpView.m */; };
 		388B98FE14588125007990DE /* TCGridCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F614588125007990DE /* TCGridCellView.h */; };
 		388B98FF14588125007990DE /* TCGridCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B98F714588125007990DE /* TCGridCellView.m */; };
 		388B990014588125007990DE /* TCGridCellView+GridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B98F814588125007990DE /* TCGridCellView+GridView.h */; };
@@ -124,6 +126,8 @@
 		210EB9F0146C38DB005FE7C9 /* TCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleton.m; sourceTree = "<group>"; };
 		218104DF1460756E000BBDB9 /* TCLockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLockUI.h; sourceTree = "<group>"; };
 		218104E01460756E000BBDB9 /* TCLockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLockUI.m; sourceTree = "<group>"; };
+		21F6A9D6147A788F00652A65 /* TCPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPopUpView.h; sourceTree = "<group>"; };
+		21F6A9D7147A788F00652A65 /* TCPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPopUpView.m; sourceTree = "<group>"; };
 		388B98F614588125007990DE /* TCGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCGridCellView.h; path = Grid/TCGridCellView.h; sourceTree = "<group>"; };
 		388B98F714588125007990DE /* TCGridCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCGridCellView.m; path = Grid/TCGridCellView.m; sourceTree = "<group>"; };
 		388B98F814588125007990DE /* TCGridCellView+GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TCGridCellView+GridView.h"; path = "Grid/TCGridCellView+GridView.h"; sourceTree = "<group>"; };
@@ -269,9 +273,19 @@
 			name = LockUI;
 			sourceTree = "<group>";
 		};
+		21F6A9D4147A782E00652A65 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				21F6A9D6147A788F00652A65 /* TCPopUpView.h */,
+				21F6A9D7147A788F00652A65 /* TCPopUpView.m */,
+			);
+			name = DialogView;
+			sourceTree = "<group>";
+		};
 		388B98F3145880C1007990DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				21F6A9D4147A782E00652A65 /* DialogView */,
 				E48894EE14632BC2007DE089 /* API Calls */,
 				E48894EF14632BCC007DE089 /* Parsers */,
 				E48894DA146327CA007DE089 /* Networking */,
@@ -592,6 +606,7 @@
 				210EB9B0146C22E0005FE7C9 /* UIAlertView+Teracode.h in Headers */,
 				210EB9B9146C2412005FE7C9 /* UIView+Teracode.h in Headers */,
 				210EB9F1146C38DB005FE7C9 /* TCSingleton.h in Headers */,
+				21F6A9D8147A788F00652A65 /* TCPopUpView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +772,7 @@
 				210EB9B1146C22E0005FE7C9 /* UIAlertView+Teracode.m in Sources */,
 				210EB9BA146C2412005FE7C9 /* UIView+Teracode.m in Sources */,
 				210EB9F2146C38DB005FE7C9 /* TCSingleton.m in Sources */,
+				21F6A9D9147A788F00652A65 /* TCPopUpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
